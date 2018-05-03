@@ -1,0 +1,209 @@
+/** FICTIONAL CASE STUDY WEBSITE **/
+
+/** ---- WEBSITE COLOR THEME ------- **/
+
+/*
+Main Colours:
+
+Primary colour - rgb(183, 154, 246); //purple for navigation links
+Secondary colour - rgb(53, 38, 80); //darker purple
+Third colour - rgb(200, 177, 250); //lighter purple*/
+
+/** Mobile default stylying (GLOBAL DEFAULT)**/
+
+/* Prevent adjustments of font size after orientation specifically for IE and windows phone */
+
+html {
+
+	-webkit-text-size-adjust: 100%
+	-ms-text-size-adjust: 100%
+
+}
+
+/** apply a natural box model layout to all elements **/
+
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+
+
+/** sets the images and videos to be 100% of their containers **/
+
+img, video{
+	width: 100%
+}
+
+
+body{
+
+	font-family: serif, sans-serif;
+	font-size: 16px;
+	color: rgb(44, 44, 44);
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+a{
+	text-decoration: none;
+}
+
+/* ----------HOME SECTION ------------ */
+
+.homeBgImage{
+	position: relative;
+	background-image: url(/resources/img/trainerHomePage.jpg);
+	background-repeat: no-repeat;
+	background-position: center 0;
+	background-size: cover;
+	background-attachment: fixed;
+	width: 100%;
+	height:auto;
+	height: 100vh;
+}
+
+.logoC {
+
+	position: absolute;
+	top: 5px;
+	left: 5px;
+	width: 45px;
+}
+
+
+.basketIcon{
+
+	position: absolute;
+	color: rgb(200, 177, 250);
+	top:10px;
+	left: 45vw;
+	width: 40px;
+	z-index: 4;
+
+}
+
+.fa-shopping-basket{
+
+	font-size: 2em;
+}
+
+.headerC{
+	position: fixed;
+	width: 100%;
+	z-index: 2;
+}
+
+
+/** navigation section **/
+
+.navC {
+
+	color: rgb(255, 255, 255);
+	background-color: rgb(53, 38, 80);
+
+
+}
+
+
+/** this is for the menu icon &#9776; **/
+#navBtn {
+	display: block;
+	font-size: 2.5em;
+	width: 20%;
+	background-color: rgb(23, 10, 46);
+	text-align: center;
+	margin: 0 5vw 0 75vw;
+	padding: 7px 2px;
+
+
+}
+
+.menu-items {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+nav li a {
+
+	color: rgb(255, 255, 255);
+	text-align: right;
+	border-top: 3px;
+	text-transform: uppercase;
+/*	font-family: serif, sans-serif;*/
+
+}
+
+/* come back to add the additonal classes to hide */
+.menu-items{
+	display: none;
+}
+
+.slogan {
+
+	font-family: serif; /*placeholder (add custom font)*/
+	color: rgb(255, 255, 255);
+	text-align: right;
+	padding: 150px 5vw 0 0;
+}
+
+.mainHeading{
+
+	font-family: 'Lovers Quarrel', cursive;
+	color: rgb(255, 255, 255);
+	font-size: 2em;
+	letter-spacing: 3px;
+	text-align: center;
+	font-weight: lighter;
+	margin: 50vh auto 0 auto;
+}
+
+.newArrivalsB{
+
+	display: block;
+	color: rgb(255, 255, 255);
+	padding: 15px 20px;
+	margin: 10px 30vw 0 auto ;
+	border-radius: 5px 5px;
+	border: 1px solid rgba(255, 255, 255, 0.5);
+	background-color: rgba(200, 177, 250, 0.25);
+	cursor: pointer;
+	font-family: arial, sans-serif;
+
+}
+
+/** ---------PRODUCT SECTION------------- **/
+
+h1 {
+	font-size: 1.5em;
+	text-align: center;
+	font-family: 'Mukta', sans-serif;
+	font-weight: lighter;
+}
+
+.caption {
+
+	text-align: center;
+	padding: 0 10px;
+
+}
+
+figure{
+	margin: 0;
+}
+
+figcaption {
+font-size: 0.8em;
+margin: 0 auto;
+text-align: center;
+}
+
+article button{
+	color: rgb(255, 255, 255);
+    background-color: rgb(53, 38, 80);
+}
+
+
