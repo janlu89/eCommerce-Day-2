@@ -1,0 +1,728 @@
+/** FICTIONAL CASE STUDY WEBSITE **/
+
+/** ---- WEBSITE COLOR THEME ------- **/
+
+/*
+Main Colours:
+
+Primary colour - rgb(183, 154, 246); //purple for navigation links
+Secondary colour - rgb(53, 38, 80); //darker purple
+Third colour - rgb(200, 177, 250); //lighter purple*/
+
+/** Mobile default stylying (GLOBAL DEFAULT)**/
+
+/* Prevent adjustments of font size after orientation specifically for IE and windows phone */
+
+html {
+
+	-webkit-text-size-adjust: 100%
+	-ms-text-size-adjust: 100%
+
+}
+
+/** apply a natural box model layout to all elements **/
+
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+/*========================EMBEDED FONTS=======================*/
+
+@font-face{
+    
+    font-family: '28_days';
+    src: url(/vendors/fonts/28_days_later-webfont.eot);
+    src: url(/vendors/fonts/28_days_later-webfont.woff2) format('woff2'), 
+        url(/vendors/fonts/28_days_later-webfont.woff) format('woff'),
+        url(/vendors/fonts/28_days_later-webfont.svg) format('svg'),
+        url(/vendors/fonts/28_days_later-webfont.ttf) format('ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+/** sets the images and videos to be 100% of their containers **/
+
+img, video{
+	width: 100%
+}
+
+
+body{
+
+	font-family: serif, sans-serif;
+	font-size: 16px;
+	color: rgb(44, 44, 44);
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+a{
+	text-decoration: none;
+}
+
+/* ----------HOME SECTION ------------ */
+
+
+.myVideo {
+    
+    display: none;
+}
+
+.homeBgImage{
+	position: relative;
+	background-image: url(/resources/img/trainerHomePage.jpg);
+	background-repeat: no-repeat;
+	background-position: center 0;
+	background-size: cover;
+	background-attachment: fixed;
+	width: 100vw;
+	height: 100vh;
+}
+
+.logoC {
+
+	position: fixed;
+    z-index: 10;
+	top: 5px;
+	left: 5px;
+	width: 45px;
+}
+
+
+.basketIcon{
+
+	position: absolute;
+	color: rgb(200, 177, 250);
+	top:10px;
+	left: 45vw;
+	width: 40px;
+	z-index: 4;
+
+}
+
+.fa-shopping-basket{
+
+	font-size: 2em;
+}
+
+.headerC{
+	position: fixed;
+	width: 100%;
+	z-index: 2;
+}
+
+
+/** navigation section **/
+
+.navC {
+
+	color: rgb(255, 255, 255);
+	background-color: rgb(53, 38, 80);
+
+
+}
+
+
+/** this is for the menu icon &#9776; **/
+#navBtn {
+	display: block;
+	font-size: 2.5em;
+	width: 20%;
+	background-color: rgb(23, 10, 46);
+	text-align: center;
+	margin: 0 5vw 0 75vw;
+	padding: 7px 2px;
+
+
+}
+
+.menu-items {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+nav li a {
+
+	color: rgb(255, 255, 255);
+	text-align: right;
+	border-top: 3px;
+	text-transform: uppercase;
+    font-family: 'mukta', sans-serif;
+/*	font-family: serif, sans-serif;*/
+
+}
+
+/* come back to add the additonal classes to hide */
+.menu-items{
+	display: none;
+}
+
+.slogan {
+
+	font-family: '28_days';
+    font-size: 2.5em;
+	color: rgb(255, 255, 255);
+	text-align: right;
+	padding: 150px 5vw 0 0;
+    
+}
+
+.mainHeading{
+
+	font-family: 'Lovers Quarrel', cursive;
+	color: rgb(255, 255, 255);
+	font-size: 2em;
+	letter-spacing: 3px;
+	text-align: left;
+	font-weight: lighter;
+	margin: 40vh auto 0 13.5vh;
+}
+
+.newArrivalsB{
+
+	display: block;
+	color: rgb(255, 255, 255);
+	padding: 15px 20px;
+	margin: 10px auto 0 13.5vh;
+	border-radius: 5px 5px;
+	border: 1px solid rgba(255, 255, 255, 0.5);
+	background-color: rgba(200, 177, 250, 0.25);
+	cursor: pointer;
+	font-family: arial, sans-serif;
+}
+
+/** ---------PRODUCT SECTION START------------- **/
+
+h1 {
+	font-size: 1.5em;
+	text-align: center;
+	font-family: 'Mukta', sans-serif;
+	font-weight: lighter;
+}
+
+.caption {
+
+	text-align: center;
+	padding: 0 10px;
+
+}
+
+figure{
+	margin: 0;
+}
+
+figcaption {
+font-size: 0.8em;
+margin: 0 auto;
+text-align: center;
+box-sizing: content-box;
+height: 6vh;
+}
+
+.allProducts {
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+}
+
+
+.allProducts article button{
+	display: block;
+    padding: 15px 20px;
+    border-radius: 5px 5px;
+    background-color: rgb(53, 38, 80);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    margin: 2vh auto 10vh auto;
+    
+}
+
+.allProducts article button a {
+    
+    color: rgb(255, 255, 255);
+    font-family: arial, sans-serif;
+    
+}
+
+
+
+
+article {
+    
+    /*text-align: center;*/
+    /*width: 230px;*/
+    margin 1%;
+    text-align: center;
+    width: 230px;
+
+}
+
+.fa-shopping-cart {
+    
+    color: rgb(255, 255, 255);
+    font-size: 1.5em;
+    margin-left: 1vh;
+    
+}
+
+.allProducts img {
+    
+    padding: 15px;
+    
+}
+/** ---------PRODUCT SECTION END------------- **/
+
+
+/** ---------LOGIN SECTION START------------- **/
+
+
+
+.loginC {
+    
+    box-sizing: border-box;
+    border: 1px solid gray;
+    margin: 5px 20px
+    
+}
+
+.loginC p {
+    
+    text-align: center;
+
+}
+
+#loginP {
+    
+    font-size: 0.8em;
+}
+
+.loginC button {
+
+    color: rgb(255, 255, 255);
+    padding: 7px 20px;
+    border-radius: 5px 5px;
+    background-color: rgb(53, 38, 80);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+input {
+    border: 1px solid black;
+}
+/** ---------LOGIN SECTION END------------- **/
+
+/** ---------ABOUT SECTION START------------- **/
+
+.aboutC p {
+    
+    text-align: center;
+    
+}
+
+#videoT{
+    
+    font-size: 1.2em;
+    
+}
+
+/** ---------ABOUT SECTION END------------- **/
+
+
+
+/** ---------CONTACT SECTION START------------- **/
+
+.contactBgImage {
+       
+    
+    position: relative;
+    /*background-image: url(/resources/img/trainerContactBackground.jpg);*/
+    background: linear-gradient(to bottom right, rgba(29, 1, 29, 0.9),rgba(74, 7, 74, 0.8)),url(/resources/img/trainerContactBackground.jpg);
+	background-repeat: no-repeat;
+	background-position: center 0;
+	background-size: cover;
+	background-attachment: fixed;
+	width: 100%;
+    padding: 0 0 0 0;
+    /*background-color: rgba(38, 2, 38, 0.82);*/
+	height:auto;
+	height: 100vh;
+    box-sizing: content-box;
+    height: 800px;
+   
+}
+
+
+
+.contactBgImage p {
+    position: relative;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-family: arial, sans-serif;
+}
+
+.contactBgImage h1 {
+    
+    color: rgb(255, 255, 255);
+    font-family: arial, sans-serif;
+    
+}
+
+.contactBgImage button {
+    position: relative;
+	display: block;
+    padding: 15px 20px;
+    border-radius: 5px 5px;
+    background-color: rgb(53, 38, 80);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    margin: auto;
+    color: rgb(255, 255, 255);
+    font-family: arial, sans-serif;
+}
+
+
+.fa-phone, .fa-envelope {
+    
+    
+    margin-right: 10px;
+    color: rgb(200, 177, 250); 
+    font-size: 1.3em;
+    
+}
+
+.adressT{
+    font-style: italic;
+}
+
+.contP p {
+    text-align: left;
+    margin: auto 30px;
+}
+
+
+.contP input {
+    
+    /**
+    background-color: rgba(29, 4, 29, 0.43);
+    color: rgb(255, 255, 255);
+    position: relative;
+    text-align: start;
+	display: block;
+    border-radius: 5px 5px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    font-family: arial, sans-serif;
+    margin: 3px auto 2px 52px;
+    width: 70%;
+    height: 5vh;
+    padding: 0;
+    
+    **/
+    
+    /*background-color: transparent;*/
+    /* border: none; */
+    border-radius: 3px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    background:  -webkit-linear-gradient(left, rgba(55, 42, 71, 0.9), rgba(25,25,25,0.5));
+    width: 98%;
+    outline: none;
+    margin: 10px 0 20px 0;
+    /*border-radius: 8px; */
+    height: 30px;
+    color: rgb(255, 255, 255);
+    font-size: 1.2em;
+    font-weight: lighter;
+    padding: 0 5%;
+
+}
+#mailC {
+    
+    height: auto;
+    font-size: 1.1em;
+    padding: 20px 5%%;
+    
+}
+
+#sendB {
+    margin: 20px auto 0 auto;
+}
+
+/** ---------CONTACT SECTION ENDS------------- **/
+
+/**-----------FOOTER SECTION---------------------**/
+
+footer {
+
+    background-color: rgb(12, 3, 26);
+    color: rgb(159, 25, 128);
+    border-radius: 2px;
+    
+}
+
+
+
+#map {
+    
+    box-sizing: border-box;
+    width: 50vw;
+    height: 50vh;
+    margin: 20px auto;
+    background-color: black;
+
+}
+
+/*** =============================MOBILE STYLES 568PX - RESOLUTION ========================**/
+
+@media screen and (min-width:360px) {
+
+
+/** this is for the menu icon &#9776; **/
+    
+
+    
+#navBtn {
+
+	margin: 0 0vw 0 79vw;
+
+}
+
+
+
+/* come back to add the additonal classes to hide */
+.menu-items{
+	display: none;
+}
+
+.slogan {
+
+	padding: 70vw 5vw 0 0;
+    
+}
+
+.mainHeading{
+
+	font-size: 2.5em;
+	text-align: center;
+	margin: 17vh auto 0 auto;
+}
+
+.newArrivalsB{
+
+	margin: 10px auto 0 17vh;
+
+}
+
+/** ---------PRODUCT SECTION START------------- **/
+
+
+
+
+
+
+
+/** ---------PRODUCT SECTION START------------- **/
+    
+    
+/** ---------CONTACT SECTION START------------- **/
+
+.contP p {
+    
+    margin: auto 8vh;
+
+}
+    
+/** ---------CONTACT SECTION START------------- **/
+  
+}
+
+/*** =============================TABLET STYLES 768PX - RESOLUTION ========================**/
+
+@media screen and (min-width:768px) {
+    
+
+    .newArrivalsB {
+        
+        margin: 0 40vw 0 auto;
+        
+    }
+    
+    .homeBgImage{
+        
+        background-position: center center;
+    }
+
+    .allProducts article button {
+        margin-bottom: 0;
+    }
+
+}
+
+/*** =============================DESKTOP STYLES 1024PX - RESOLUTION ========================**/
+
+@media screen and (min-width:1024px) {
+    
+    
+    .myVideo {
+        
+        display: inline-block;
+        background-size: cover;
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: auto;
+        z-index: -1000;
+        
+    }
+    
+    .homeBgImage {
+        
+        background-image: none;
+        background: -webkit-linear-gradient(rgba(0, 0, 0, 0.51), rgba(0, 0, 0, 0.56));
+        overflow-y: hidden;
+        
+    }
+    
+    #navBtn, .basketIcon {
+        display: none;
+    }
+    
+    .menu-items {
+    
+    display: inline;
+        
+    }
+    
+ 
+
+    .logoC {
+
+        position: absolute;
+        top: 80px;
+        left: 7vw;
+        width: 120px;
+    }
+    .navC{
+        
+        text-align: right;
+        border-bottom: none;
+        
+    }
+    
+    nav li a {
+        
+        border-top: none;
+        font-size: 0.8em;
+        letter-spacing: 0.5px;
+        
+    }
+    
+    nav a:hover { /** color when u pass with the mouse **/
+        
+        color: rgb(200, 177, 250);
+        
+    }
+    
+    
+    .menu-items a {
+        
+        display: inline;
+        text-align: center;
+        cursor: pointer;
+        
+    }
+    
+    .menu-items li {
+        
+        border-top: none;
+        display: inline;
+        padding: 0 4vh;
+
+    }
+    
+    nav {
+        padding: 2vh 0;
+        
+    }
+    
+    .fa-shopping-basket{
+        
+        color: rgb(200, 177, 250);
+        font-size: 1.2em;
+        
+    }
+
+    .slogan {
+
+        font-size: 3.5em;
+        padding: 55vh 15vw 0 0;
+
+    }
+
+    .mainHeading{
+
+        font-size: 3em;
+        letter-spacing: 3px;
+        text-align: left;
+        margin-top: 0;
+        margin-left: 4vw;
+        
+    }
+
+
+    .newArrivalsB{
+
+        display: block;
+        padding: 15px 7vh;
+        margin: 10px auto 0 3.5vw;
+
+        
+        
+}
+
+    .logoC {
+        z-index: 1;
+    }
+
+
+
+
+/** ---------PRODUCT SECTION START------------- **/
+
+
+    .allProducts {
+        
+        column-count: 4;
+    
+    
+}
+
+    
+/** ----------------LOGIN SECTION START------------ **/
+    
+    
+    
+/** ----------------ABOUT SECTION START------------ **/
+
+    
+    .figV {
+        
+        padding: 0 15vh;
+        
+    }
+    
+    .figV video {
+        
+        
+        padding: 0 30vh;
+        
+    }
+
+}
+
+
